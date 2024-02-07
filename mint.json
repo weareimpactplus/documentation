@@ -24,7 +24,7 @@
   "navigation": [
     {
       "group": "IMPACT+ Documentation",
-      "pages": ["documentation","explore","visualise","reduce","campaignmanagement","glossary", "usecases", "bestpractices"]
+      "pages": ["documentation","explore","visualise","reduce","campaignmanagement"<br/>,"glossary", "usecases", "bestpractices"]
    
 
     }
