@@ -28,8 +28,10 @@
   "navigation": [
     {
       "group": "IMPACT+ Documentation",
-      "pages": ["documentation","report","visualise","reduce","campaignmanagement",
-      "glossary"]
+      "pages": ["documentation","report","visualise","reduce","campaignmanagement"],
+      <br />
+      "pages": [
+      "glossary","methodology"]
    
 
     }
