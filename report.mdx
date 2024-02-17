@@ -1,98 +1,77 @@
 ---
-title: 'Explore'
+title: 'Report'
 description: 'Build custom reports by selecting your dimensions and metrics to export this data as an Excel file'
 ---
 
-<Info>
-  **Prerequisite** You should have installed Node.js (version 18.10.0 or
-  higher).
-</Info>
+The report builder enables you to create a report with any combination of dimensions and metrics available to export this data as an Excel file e-mailed to the address associated to the login creating the report.
 
-Step 1. Install Mintlify on your OS:
+To define a report, simply:
 
-<CodeGroup>
+1. Enter a ***Report name*** in the **Configuration** section
+2. Select the scope of your report by choosing ***to*** and ***from*** dates, ***filters***, and whether you want to ***compare*** against benchmarks in the **Select filters** area
+3. Select the dimensions you want included in the report with the ***Group by*** field in **Report data**
+4. Select the metrics you want included in the report with the ***Metrics*** field in **Report data**
+5. Preview your report structure in the **Preview** section
+6. Push the ***e-mail report*** button at the bottom
 
-```bash npm
-npm i -g mintlify
-```
 
-```bash yarn
-yarn global add mintlify
-```
 
-</CodeGroup>
+## Available Dimensions and Metrics
 
-Step 2. Go to the docs are located (where you can find `mint.json`) and run the following command:
+### Dimensions
 
-```bash
-mintlify dev
-```
+| Field | Description |
+| --- | --- |
+| Day | Date field (dd/mm/yyyy) |
+| Month | Month (word) |
+| Seat | Seat / Customer name (in IMPACT+) |
+| Advertisers | Advertiser name (from connected platform) |
+| Advertiser IDs | Advertiser ID (from connected platform) |
+| Campaigns | Campaign name (in IMPACT+) |
+| Activations | Campaign name (from connected platform) |
+| Activation IDs | Campaign ID (from connected platform) |
+| Insertion Orders | Insertion Order name (from connected platform) |
+| Insertion Order IDs | Insertion Order ID (from connected platform) |
+| Line Items | Line Item name (from connected platform) |
+| Line Item IDs | Line Item ID (from connected platform) |
+| Creatives | Creative name (from connected platform) |
+| Creative IDs | Creative ID (from connected platform) |
+| Platforms | Platform name |
+| Asset type | Creative type |
+| Device | Device type |
+| Format | Format name |
+| Connection | Connection type |
+| Placements & Ad formats | Placement / ad format name |
+| Duration (seconds) | Video duration (seconds) |
 
-The documentation website is now available at `http://localhost:3000`.
 
-### Custom Ports
+### Metrics
 
-Mintlify uses port 3000 by default. You can use the `--port` flag to customize the port Mintlify runs on. For example, use this command to run in port 3333:
 
-```bash
-mintlify dev --port 3333
-```
-
-You will see an error like this if you try to run Mintlify in a port that's already taken:
-
-```md
-Error: listen EADDRINUSE: address already in use :::3000
-```
-
-## Mintlify Versions
-
-Each CLI is linked to a specific version of Mintlify. Please update the CLI if your local website looks different than production.
-
-<CodeGroup>
-
-```bash npm
-npm i -g mintlify@latest
-```
-
-```bash yarn
-yarn global upgrade mintlify
-```
-
-</CodeGroup>
-
-## Deployment
-
-<Tip>
-  Unlimited editors available under the [Startup
-  Plan](https://mintlify.com/pricing)
-</Tip>
-
-You should see the following if the deploy successfully went through:
-
-<Frame>
-  <img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} />
-</Frame>
-
-## Troubleshooting
-
-Here's how to solve some common problems when working with the CLI.
-
-<AccordionGroup>
-  <Accordion title="Mintlify is not loading">
-    Update to Node v18. Run `mintlify install` and try again.
-  </Accordion>
-  <Accordion title="No such file or directory on Windows">
-Go to the `C:/Users/Username/.mintlify/` directory and remove the `mint`
-folder. Then Open the Git Bash in this location and run `git clone
-https://github.com/mintlify/mint.git`.
-
-Repeat step 3.
-
-  </Accordion>
-  <Accordion title="Getting an unknown error">
-    Try navigating to the root of your device and delete the ~/.mintlify folder.
-    Then run `mintlify dev` again.
-  </Accordion>
-</AccordionGroup>
-
-Curious about what changed in a CLI version? [Check out the CLI changelog.](/changelog/command-line)
+| Field | Description |
+| --- | --- |
+| Impressions | Volume of impressions |
+| GHG emissions | Volume of GHG emissions (gCO2eq) |
+| Spend € | Spend in EUR |
+| Spend £ | Spend in GBP |
+| Spend $ | Spend in USD |
+| Electricity consumption | Electricity consumption (kWh) |
+| Wh per 1000 impressions | Electricity consumption per 1000 impressions  |
+| Wh per 1000 views | Electricity consumption per 1000 views |
+| Wh per 1000€ spent | Electricity consumption per €1000 |
+| Wh per 1000$ spent | Electricity consumption per $1000 |
+| Wh per 1000£ spent | Electricity consumption per £1000 |
+| gCO2eq per 1000 impressions | GHG emissions per 1000 impressions |
+| gCO2eq per 1000 views | GHG emissions per 1000 views |
+| gCO2eq per 1000€ spent | GHG emissions per €1000 |
+| gCO2eq per 1000$ spent | GHG emissions per $1000 |
+| gCO2eq per 1000£ spent | GHG emissions per £1000 |
+| Creative weight | Creative asset file size (kb) |
+| Creative duration | Creative duration (video) (seconds) |
+| Viewtime | Avg. video length viewed (seconds) |
+| Video start | Video starts |
+| Video 25 | Video played to 25% at least |
+| Video 50 | Video played to 50% at least |
+| Video 75 | Video played to 75% at least |
+| Video completed | Video completed |
+| VCR | Video Completion Rate (videos completed / videos started) |
