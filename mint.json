@@ -13,11 +13,11 @@
 },
 
   "favicon": "/favicon.png",
-
+  
   "colors": {
     "primary": "#98d331",
     "light": "#98d331",
-    "dark": "#FFFFFF",
+    "dark": "#98d331",
     "background": {
       "light": "#033351",
       "dark": "#033351"
@@ -28,7 +28,7 @@
   "navigation": [
     {
       "group": "IMPACT+ Documentation",
-      "pages": ["documentation","report","visualise","reduce","campaignmanagement"<br/>,
+      "pages": ["documentation","report","visualise","reduce","campaignmanagement",
       
       
       
