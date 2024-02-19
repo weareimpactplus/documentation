@@ -1,71 +1,108 @@
 ---
-title: Visualise
+title: Visualize
 description: 'Selection of customisable dashboards to provide campaign information at a glance'
 ---
 
-<img
-  className="block dark:hidden"
-  src="/images/hero-light.svg"
-  alt="Hero Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.svg"
-  alt="Hero Dark"
-/>
 
-## Setting up
+Throughout the **Visualize** section you will need to select your scope via the ***dates*** and ***filters*** option at the top of the page to determine what data to include and whether to break it down by ***Day*** or ***Month***
 
-The first step to world-class documentation is setting up your editing environments.
+You can also select a ***Compare to*** field which enables you to select which benchmark you wish to use as a comparison.
 
-<CardGroup cols={2}>
-  <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
-  >
-    Get your docs set up locally for easy development
-  </Card>
-  <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
-  >
-    Preview your changes before you push to make sure they're perfect
-  </Card>
-</CardGroup>
+Once selected, you can choose to view data in the **Overview Tab** or the **Performance Tab**.
 
-## Make it yours
 
-Update your docs to your brand and add valuable content for the best user conversion.
 
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/components/accordion"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/showcase"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
-</CardGroup>
+
+## Overview Tab
+ 
+
+This section provides a selection of dashboard views to help you understand your GHG emissions and electricity consumption.
+
+### Scope Audited
+
+This section allow users to identify the some key details on the scope which was defined above
+
+• ***Total invested budget*** (the value of investments made on the scope selected)
+
+• ***Total impressions*** (the volume of impressions made, can be filtered to show display
+or video only)
+
+• ***Number of Completed views*** (video only, will show the volume of videos views reaching 100% completion)
+
+• ***Number of Platforms audited*** (giving an overview of the various channels on which the evaluation is done)
+
+
+### GHG Emissions
+
+This section lets you analyze the greenhouse gas (GHG) Emissions of the selected scope.
+
+This graph highlights:
+
+- ***Total GHG Emissions*** (bar chart)
+
+- ***Performance*** (line based on the KPI selected above the graph: *GHG Per 1000€ Spent*, *GHG Per 1000 impressions*, *GHG Per 1000 Views (video only)*)
+
+- ***Market performance*** (based on benchmark selected)
+
+- ***Carbon Intensity***
+
+This analysis will allow our users to evaluate the GHG emissions and identify the evolution and if reduction measures taken throughout time were efficient.
+
+<Tip> When filtered on one country, you can use the Carbon intensity of electricity graph, to understand if your past delivery was efficiently planned and matched the less carbonized days. This is only available when selecting a single country because the carbon intensity varies significantly from between countries </Tip>
+
+### Electricity Consumption
+
+Deep dive into the electricity consumption of the scope selected. 
+
+<Note> Reducing electricity consumption correlates to an improvement in Environmental Performance  </Note>
+This graph shows a time series of:
+
+- ***Electricity Consumption***
+- ***Performance*** (based on the KPI selected above the graph: *Electricity Consumption
+Per 1000€ Spent*, *Electricity Consumption Per 1000 Impressions*, *Electricity Consumption Per 1000 Views (video only)*)
+- ***Market performance*** (based on benchmark selected)
+
+<Tip> We recommend using ***Electricity Consumption Per 1000€ spent*** as the best metric for comparison. This metric enables comparison of all formats on the same basis and avoids rebound effects due to differences in Volume / CPM </Tip>
+
+### Performance
+
+Check the impact of your environmental actions on your campaign media KPIs, such as eCPM and VTR. 
+
+### Electricity Consumption Split Analysis
+
+Analyze Electricity Consumption of each equipment category and device type throughout the digital advertising ecosystem.
+
+Here is a table to identify actions which can be done to act on a specific category of equipment:
+
+
+|  | Data Centers | Network | End-user Devices |
+| --- | --- | --- | --- |
+| **Creatives** | Reduce creative weight and video duration | Reduce creative weight and video duration | Reduce creative weight and video duration |
+| **Formats** | Push more budget on formats which have the lower *kWh / $1000 spent* | Push more budget on formats which have the lower *kWh / $1000 spent* | Push more budget on formats which have the lower *kWh / $1000 spent* |
+| **Targeting** | | Target Wi-Fi over cellcular | Target smaller screens |
+| **Planning actions** | Deliver more ads during days with lower carbon intensity | Deliver more ads during days with lower carbon intensity | Deliver more ads during days with lower carbon intensity |
+
+### Greenhouse Gas Emission Split Analysis
+
+These graphs illustrate the overall Greenhouse Gas Emissions attributed to different equipment categories throughout the campaign. 
+
+
+
+## Performance Tab
+
+This section lets you deep dive into your environmental performance metrics.
+
+It allows you to analyse your digital advertising activity by dimensions to identify the highest and lowest performers and context from an environmental standpoint in order to identify reduction actions.
+
+In addition to the Scope selection at the beginning, the **Performance** tab allows you to do deeper analysis with the following fields:
+
+- ***Group by*** structures your analysis bar chart based on the selected dimension
+
+- ***Sort by*** determines how you want your results ordered
+(*Impressions*, *Budget spent*, *Performance metric*)
+
+- ***Performance metric*** determines which metric you wish to use as the basis of comaprison
+
+<Tip> Sorting by ***Share of budget spent*** helps you to see the proportion of budget spent on each row to better understand the relative impact of the performance metric chosen </Tip>
+
+
