@@ -2,3 +2,75 @@
 title: 'Glossary'
 description: 'Glossary of terms and metrics defined used throughout the interface'
 ---
+
+
+**Greenhouse gas emissions (total) (gCO₂eq, kgCO₂eq or TCO₂eq)**: Total of emissions including
+emissions due to electricity consumption and end-user device lifecycle (manufacturing,
+transport, metal extractions…). Emissions are a mix of different greenhouse gases, brought
+back to their CO₂ equivalent in terms of impact on climate change.
+
+**Electricity consumption (Wh or kWh)**: Total electricity consumption of the campaign,
+including Data centers (and servers), networks (routers…) and end users devices
+(smartphone, connected tv). Electricity consumption depends on multiple criteria including
+(but not limited to) creatives (duration, creative weight…), campaign performances (VTR…),
+context of delivery (device, connection type…) or the place the ad is hosted or delivered.
+
+**Carbon intensity of electricity (gCO₂eq/kWh)**: Volume of greenhouse gas emissions due to
+the production of one kWh of electricity at the time the advertisement is delivered. The
+same volume of electricity consumption (in kWh) leads to different amount of GHG
+emissions, depending on the electricity power plants mix, which depends on country and
+varies over time.
+
+**Greenhouse gas emissions (elec.) (gCO₂eq, kgCO₂eq or TCO₂eq)**: Emissions due to
+electricity consumption. Combines volume of electricity consumed and carbon intensity of
+electricity.
+
+**KPIs calculations**
+- **Wh/1000 impressions** = total electricity consumption / total impressions * 1000
+- **Wh/1000 views** = total electricity consumption / total videos viewed (completed) *
+1000
+- **Wh/1000€** = total electricity consumption / total media spent * 1000.
+- The same campaign, delivered in the same context, but sold on a cheaper e-CPM
+would automatically lead to worse performances on this KPI, as this will multiply the
+number of impressions on the same budget. This KPI is the main to optimize.
+- **gCO2eq(elec.)/1000 impressions** = total emissions due to electricity consumption /
+total impressions * 1000
+- **gCO2eq(elec.)/1000 views** = total emissions due to electricity consumption / total
+video viewed (completed) * 1000
+- **gCO2eq(elec.)/1000€** = total emissions due to electricity consumption / total media
+spent * 1000
+
+**Platform** in ESP refers to a 3rd party platform that the client uses to buy digital advertising.
+These platforms are the source of our data and we use their APIs to pull relevant data from
+them. Some examples are Meta, Tiktok, Snapchat, TheTradeDesk, DV360
+
+**Activation** in ESP refers to the line items or campaigns in the 3rd party platform that we
+receive data for. Within these activations lie the creatives used for advertising. For example,
+a client may have a line item called Black Friday 2024 in Meta with creatives showing their
+discount items. Black Friday 2024 will be pulled into ESP as an activation and the creatives
+contained within will keep their names from the 3rd party platform
+
+**Campaign** in ESP is a meta-campaign to group the activations the client has. They may
+have activity from Meta, DV360 and Tiktok all pertaining to the same marketing campaign so
+they want to view this information together. Because the naming on each platform may
+differ, a mapping is needed to join them together. This mapping becomes the campaign in
+ESP.
+
+
+**Reduced emissions** looks at the reduction of emissions in absolute terms between two
+scopes. For example, from 2022 to 2023, if you produced 100tCO2eq in 2022 and 80tCO2eq
+in 2023, you have reduced emissions by 20%.
+
+**Avoided emissions** are emissions that would have been generated, but weren’t due to
+improved inputs or processes. Let’s say in 2022 you generated 100 tons of CO2eq. In 2023,
+you implemented a number of best practices but also doubled your output/number of
+clients. As a result, you’ve generated 150 tons of CO2eq. This means that there has not been
+a reduction, however, in order to help quantify how much CO2eq you would have created,
+we can run a simulation where we use 2022 as a baseline to determine how many emissions
+would have been created if you hadn’t put in place better practices. If this number is now
+200 tCO2eq, then you will have 50tCO2eq avoided emissions.
+
+
+
+
+
