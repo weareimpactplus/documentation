@@ -31,7 +31,7 @@
       "pages": ["documentation","report","visualise","reduce","campaignmanagement"]},
      {"group": "Additional Resources",
       "pages": [
-      "glossary"]
+      "glossary", "https://method.weareimpactplus.com"]
     }
   ] 
     
