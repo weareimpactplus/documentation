@@ -28,10 +28,10 @@
   "navigation": [
     {
       "group": "IMPACT+ ESP Documentation",
-      "pages": ["documentation","report","visualise","reduce","campaignmanagement"]},
+      "pages": ["documentation","report","visualise","reduce","campaignmanagement", "creativeoptimizer"]},
      {"group": "Additional Resources",
       "pages": [
-      "glossary", "https://method.weareimpactplus.com"]
+      "glossary", "methodology"]
     }
   ] 
     
