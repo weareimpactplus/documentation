@@ -4,14 +4,14 @@ description: 'Activity mapping and management'
 ---
 
 
-This section was built to allow marketers to manage their connected platforms with their various line items and formats into meta-campaigns within ESP. 
+This section was built to allow marketers to manage their connected platforms with their various line items and formats into meta-campaigns within ESP. It also allows users to declare optimizations made on their activity to inform the emissions model.
 
 <Note> Although we can automatically ingest data and structure from your platforms, we cannot map between different line items or platforms so this needs to be done manually. </Note>
 
 An ***Activation*** is a *campaign* from a *platform*. We have named it this way to avoid confusion from the ***Campaign*** term within ESP. By collating ***Activations*** into ***Campaigns*** you can get a top-line view of your activity without having a complicated filter selection process every time you want to analyze a set of activity that sits across multiple *platforms*, *accounts* or *campaigns*.
 
 
-## Activations:
+### Activations:
 
 This section lists all the activations for all platforms which were sent to IMPACT+ following the onboarding process.
 
@@ -21,7 +21,7 @@ From this page you will be able to manage your activations:
 - Update the video duration
 - Update the creative format used (ie. Facebook and Instagram)
 
-## Campaigns:
+### Campaigns:
 
 The section lists all the campaigns which were created by you or your team and enables you
 to:
@@ -29,7 +29,34 @@ to:
 - View number of activations assigned to the campaign 
 
 
-## 
+## Optimization Declaration
+
+Optimization declaration allows users to provide information to IMPACT+ that helps to ensure the most accurate modelling of GHG emissions and electricity consumption of your activity.
+
+<Note> Some optimization activities cannot be derived from the reports available in the buying platforms. When these optimizations are made, a declaration is needed to update the model of the precise context. </Note>
+
+The optimizations available to declare are:
+
+<AccordionGroup>
+  <Accordion title="Wifi-only targeting selected">This option means that you have set your targeting within your buying platform to target only users on a wifi connection. Wifi has a smaller footprint than cellular targeting due to the technologies and hardware involved but not all activity can be clearly categorised so targeting wifi only may reduce the number of available impressions. 
+  </Accordion>
+  <Accordion title="Cellular targeting excluded">Similar to targeting only wifi within your buying platform, excluding cellular targeting does a similar thing but does not exclude the activity that is not categorised so allows for more scale but also potentially allowing some cellular activity through. 
+  </Accordion>
+  <Accordion title="Lower carbon budget scheduling">Lower carbon budget scheduling lets us know that you have adjusted your delivery in your buying platforms to favour times with lower carbon intensity and therefore drive fewer GHG emissions for the same electricity consumption. 
+  </Accordion>
+  <Accordion title="Creative & Format selection"> Creative and format selection lets us know that you have focused delivery towards more efficient creatives and/or formats to reduce your carbon footprint.
+  <Accordion>
+
+</AccordionGroup>
+
+
+### How to use
+
+1. Select the ***creatives***, ***activations*** or ***campaigns*** that the optimization has been applied to
+2. Push the ***Declare Optimization*** button
+3. Select the optimization(s) that apply.
+
+
 
 
 
