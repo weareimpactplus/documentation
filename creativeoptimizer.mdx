@@ -29,38 +29,27 @@ The max file weight should be 500MB per upload and videos should be no longer th
 8. **Wait for e-mail** - you will receive a download link for your optimized creatives in your e-mail upon completion
 
 
-## Optimized Creatives
+## Optimized Creatives Output
 
 
-Upon downloading the zip file containing your optimized creatives you will see several suffixes added to the filename:
+Upon downloading and extracting the zip file containing your optimized creatives you will see several folders available:
 
-e.g. 
+Zip file structure: 
 
-[ORIGINALFILENAME] ***ctv-16.9-1080p-1785kbps-stereo-128kbps-most-optimized***
+- 3 folders
+    1. **Recommended – all devices - Platform name**
+    2. **Max GHG Reduction – all devices - Platform name**
+    3. CTV folder - Name dependent on which platforms they relate to (in bold below):
+        1. Programmatic platforms (DV360, Xandr, Google Ads, Youtube, TTD, Generic DSP) > **CTV specific – CTV – Platform name**
+        2. Amazon DSP > **Prime video & Freevee specific - CTV - Amazon DSP**
+        3. Tiktok > **Min GHG Reduction - all devices - Tiktok**
 
-which corresponds to: 
+1. **Recommended spec** that will work across devices for a given platform. We do not envisage any concerns around video quality, regardless of the device or content of the video.
+2. **Max GHG Reduction** folder provides more heavy optimization which may have a slightly noticeable impact on visual quality if using fast moving images, thin text (like subtitles or small print) or an extended color palette. This provides a stronger reduction than the recommended spec but we would advise a human review of the quality before deploying.
+3. **CTV folder** provides appropriate specs for CTV devices due to their much larger size and quality needs. There is also a significant difference between minimum specs required by each platforms so we have captured that here to ensure all creatives are accepted.
 
-[ORIGINALFILENAME] ***device-aspectratio-videoresolution-videobitrate-audiochannel-audiobitrate-optimization level***
+The filenames within the folders no longer identify which set they’re in or their attributes as they did previously, in order to remove errors relating to naming structures/taxonomies.
 
-These elements are described below
-
-
-| Field | Description |
-| --- | --- |
-| Device | Intended viewing device: CTV, Desktop/Tablet, Smartphone, AllDevices |
-| Aspect Ratio | Portrait / Landscape / Square ratios - 16:9, 9:16, 4:3, 3:4, 1:1, 4:5, 5:4|
-| Video Resolution | Video dimensions: 1080p - 360p  |
-| Video Bitrate | Bitrate of video in kbps: 1785kbps - 320kbps |
-| Audio Channel | Mono or Stereo audio channels |
-| Audio Bitrate | Bitrate of audio in kbps: 128kbps - 80kpbs|
-| Optimization Level | Most - Least optimized and 'Recommended' |
-
-
-These suffixes can help you understand the specific details of the optimized video.
-
-**Best Practice would involve separating targeting by device** because the different screen sizes mean different levels of optimization are possible without affecting the user viewing experience. Therefore, **we recommend that users review the most optimized versions for each device type** and implement them separately where possible.
-
-However, **we recognise it is not always possible to split out targeting and budget by device so we have also included a 'RECOMMENDED' creative that should perform well across all device types** without reduction in visual fidelity. Use this version if you are unable to split line items or campaigns by device.
 
 <Note> Things to look for when reviewing video quality against the original: <br /><br /> -Subtitles / Smallprint
 <br /> -Fast moving images
@@ -84,447 +73,184 @@ While we have configured the optimization presets by platform, device, formats a
 
 Below is a full list of the settings chosen for each platform for your reference:
 
-| Platform | Device | Aspect ratio | Video Resolution | Video Bitrate (kbps) | Audio Channel | Audio Bitrate (kbps) |
-| --- | --- | --- | --- | --- | --- | --- |
-| DV360 | ctv | 16:9 | 1920*1080 | 2550 | Stereo | 128 |
-| DV360 | ctv | 16:9 | 1920*1080 | 3315 | Stereo | 128 |
-| DV360 | ctv | 16:9 | 1920*1080 | 1785 | Stereo | 128 |
-| DV360 | ctv | 16:9 | 1280*720 | 2000 | Stereo | 128 |
-| DV360 | ctv | 16:9 | 1280*720 | 2600 | Stereo | 128 |
-| DV360 | ctv | 16:9 | 1280*720 | 1400 | Stereo | 128 |
-| DV360 | all devices | 16:9 | 1280*720 | 1300 | Stereo | 128 |
-| DV360 | desktop & tablet | 16:9 | 1280*720 | 1300 | Mono | 80 |
-| DV360 | desktop & tablet | 16:9 | 1280*720 | 1690 | Stereo | 128 |
-| DV360 | desktop & tablet | 16:9 | 1280*720 | 910 | Mono | 80 |
-| DV360 | smartphone | 16:9 | 640*360 | 400 | Mono | 128 |
-| DV360 | smartphone | 16:9 | 640*360 | 520 | Stereo | 128 |
-| DV360 | smartphone | 16:9 | 640*360 | 320 | Mono | 80 |
-| DV360 | ctv | 9:16 | 1080*1920 | 2550 | Stereo | 128 |
-| DV360 | ctv | 9:16 | 1080*1920 | 3315 | Stereo | 128 |
-| DV360 | ctv | 9:16 | 1080*1920 | 1785 | Stereo | 128 |
-| DV360 | ctv | 9:16 | 720*1280 | 2000 | Stereo | 128 |
-| DV360 | ctv | 9:16 | 720*1280 | 2600 | Stereo | 128 |
-| DV360 | ctv | 9:16 | 720*1280 | 1400 | Stereo | 128 |
-| DV360 | all devices | 9:16 | 720*1280 | 1300 | Stereo | 128 |
-| DV360 | desktop & tablet | 9:16 | 720*1280 | 1300 | Mono | 80 |
-| DV360 | desktop & tablet | 9:16 | 720*1280 | 1690 | Stereo | 128 |
-| DV360 | desktop & tablet | 9:16 | 720*1280 | 910 | Mono | 80 |
-| DV360 | smartphone | 9:16 | 360*640 | 400 | Mono | 128 |
-| DV360 | smartphone | 9:16 | 360*640 | 520 | Stereo | 128 |
-| DV360 | smartphone | 9:16 | 360*640 | 320 | Mono | 80 |
-| DV360 | ctv | 4:3 | 1440*1080 | 2550 | Stereo | 128 |
-| DV360 | ctv | 4:3 | 1440*1080 | 3315 | Stereo | 128 |
-| DV360 | ctv | 4:3 | 1440*1080 | 1785 | Stereo | 128 |
-| DV360 | all devices | 4:3 | 1080*810 | 1300 | Stereo | 128 |
-| DV360 | desktop & tablet | 4:3 | 1080*810 | 1300 | Mono | 80 |
-| DV360 | desktop & tablet | 4:3 | 1080*810 | 1690 | Stereo | 128 |
-| DV360 | desktop & tablet | 4:3 | 1080*810 | 910 | Mono | 80 |
-| DV360 | smartphone | 4:3 | 640*480 | 400 | Mono | 128 |
-| DV360 | smartphone | 4:3 | 640*480 | 520 | Stereo | 128 |
-| DV360 | smartphone | 4:3 | 640*480 | 320 | Mono | 80 |
-| DV360 | ctv | 3:4 | 1080*1440 | 2550 | Stereo | 128 |
-| DV360 | ctv | 3:4 | 1080*1440 | 3315 | Stereo | 128 |
-| DV360 | ctv | 3:4 | 1080*1440 | 1785 | Stereo | 128 |
-| DV360 | all devices | 3:4 | 810*1080 | 1300 | Stereo | 128 |
-| DV360 | desktop & tablet | 3:4 | 810*1080 | 1300 | Mono | 80 |
-| DV360 | desktop & tablet | 3:4 | 810*1080 | 1690 | Stereo | 128 |
-| DV360 | desktop & tablet | 3:4 | 810*1080 | 910 | Mono | 80 |
-| DV360 | smartphone | 3:4 | 480*640 | 400 | Mono | 128 |
-| DV360 | smartphone | 3:4 | 480*640 | 520 | Stereo | 128 |
-| DV360 | smartphone | 3:4 | 480*640 | 320 | Mono | 80 |
-| DV360 | ctv | 1:1 | 1080*1080 | 2550 | Stereo | 128 |
-| DV360 | ctv | 1:1 | 1080*1080 | 3315 | Stereo | 128 |
-| DV360 | ctv | 1:1 | 1080*1080 | 1785 | Stereo | 128 |
-| DV360 | all devices | 1:1 | 720*720 | 1300 | Stereo | 128 |
-| DV360 | desktop & tablet | 1:1 | 720*720 | 1300 | Mono | 80 |
-| DV360 | desktop & tablet | 1:1 | 720*720 | 1690 | Stereo | 128 |
-| DV360 | desktop & tablet | 1:1 | 720*720 | 910 | Mono | 80 |
-| DV360 | smartphone | 1:1 | 480*480 | 400 | Mono | 128 |
-| DV360 | smartphone | 1:1 | 480*480 | 520 | Stereo | 128 |
-| DV360 | smartphone | 1:1 | 480*480 | 320 | Mono | 80 |
-| Tiktok | ctv | 9:16 | 720*1280 | 1300 | Stereo | 128 |
-| Tiktok | ctv | 9:16 | 720*1280 | 1690 | Stereo | 128 |
-| Tiktok | ctv | 9:16 | 720*1280 | 910 | Stereo | 128 |
-| Tiktok | Smartphone, tablet, desktop & tablet | 9:16 | 540*960 | 650 | Stereo | 128 |
-| Tiktok | Smartphone, tablet, desktop & tablet | 9:16 | 540*960 | 650 | Mono | 80 |
-| Tiktok | Smartphone, tablet, desktop & tablet | 9:16 | 540*960 | 845 | Stereo | 128 |
-| Tiktok | Smartphone, tablet, desktop & tablet | 9:16 | 540*960 | 520 | Mono | 80 |
-| Tiktok | ctv | 16:9 | 1280*720 | 1300 | Stereo | 128 |
-| Tiktok | ctv | 16:9 | 1280*720 | 1690 | Stereo | 128 |
-| Tiktok | ctv | 16:9 | 1280*720 | 910 | Stereo | 128 |
-| Tiktok | Smartphone, tablet, desktop & tablet | 16:9 | 960*540 | 650 | Stereo | 128 |
-| Tiktok | Smartphone, tablet, desktop & tablet | 16:9 | 960*540 | 650 | Mono | 80 |
-| Tiktok | Smartphone, tablet, desktop & tablet | 16:9 | 960*540 | 845 | Stereo | 128 |
-| Tiktok | Smartphone, tablet, desktop & tablet | 16:9 | 960*540 | 520 | Mono | 80 |
-| Tiktok | ctv | 1:1 | 720*720 | 900 | Stereo | 128 |
-| Tiktok | ctv | 1:1 | 720*720 | 1170 | Stereo | 128 |
-| Tiktok | ctv | 1:1 | 720*720 | 630 | Stereo | 128 |
-| Tiktok | Smartphone, tablet, desktop & tablet | 1:1 | 640*640 | 650 | Stereo | 128 |
-| Tiktok | Smartphone, tablet, desktop & tablet | 1:1 | 640*640 | 650 | Mono | 80 |
-| Tiktok | Smartphone, tablet, desktop & tablet | 1:1 | 640*640 | 845 | Stereo | 128 |
-| Tiktok | Smartphone, tablet, desktop & tablet | 1:1 | 640*640 | 520 | Mono | 80 |
-| Youtube | ctv | 16:9 | 1920*1080 | 2550 | Stereo | 128 |
-| Youtube | ctv | 16:9 | 1920*1080 | 3315 | Stereo | 128 |
-| Youtube | ctv | 16:9 | 1920*1080 | 1785 | Stereo | 128 |
-| Youtube | ctv | 16:9 | 1280*720 | 2000 | Stereo | 128 |
-| Youtube | ctv | 16:9 | 1280*720 | 2600 | Stereo | 128 |
-| Youtube | ctv | 16:9 | 1280*720 | 1400 | Stereo | 128 |
-| Youtube | all devices | 16:9 | 1280*720 | 1300 | Stereo | 128 |
-| Youtube | desktop & tablet | 16:9 | 1280*720 | 1300 | Mono | 80 |
-| Youtube | desktop & tablet | 16:9 | 1280*720 | 1690 | Stereo | 128 |
-| Youtube | desktop & tablet | 16:9 | 1280*720 | 910 | Mono | 80 |
-| Youtube | smartphone | 16:9 | 640*360 | 400 | Mono | 128 |
-| Youtube | smartphone | 16:9 | 640*360 | 520 | Stereo | 128 |
-| Youtube | smartphone | 16:9 | 640*360 | 320 | Mono | 80 |
-| Youtube | ctv | 9:16 | 1080*1920 | 2550 | Stereo | 128 |
-| Youtube | ctv | 9:16 | 1080*1920 | 3315 | Stereo | 128 |
-| Youtube | ctv | 9:16 | 1080*1920 | 1785 | Stereo | 128 |
-| Youtube | ctv | 9:16 | 720*1280 | 2000 | Stereo | 128 |
-| Youtube | ctv | 9:16 | 720*1280 | 2600 | Stereo | 128 |
-| Youtube | ctv | 9:16 | 720*1280 | 1400 | Stereo | 128 |
-| Youtube | all devices | 9:16 | 720*1280 | 1300 | Stereo | 128 |
-| Youtube | desktop & tablet | 9:16 | 720*1280 | 1300 | Mono | 80 |
-| Youtube | desktop & tablet | 9:16 | 720*1280 | 1690 | Stereo | 128 |
-| Youtube | desktop & tablet | 9:16 | 720*1280 | 910 | Mono | 80 |
-| Youtube | smartphone | 9:16 | 360*640 | 400 | Mono | 128 |
-| Youtube | smartphone | 9:16 | 360*640 | 520 | Stereo | 128 |
-| Youtube | smartphone | 9:16 | 360*640 | 320 | Mono | 80 |
-| Youtube | ctv | 4:3 | 1440*1080 | 2550 | Stereo | 128 |
-| Youtube | ctv | 4:3 | 1440*1080 | 3315 | Stereo | 128 |
-| Youtube | ctv | 4:3 | 1440*1080 | 1785 | Stereo | 128 |
-| Youtube | all devices | 4:3 | 1080*810 | 1300 | Stereo | 128 |
-| Youtube | desktop & tablet | 4:3 | 1080*810 | 1300 | Mono | 80 |
-| Youtube | desktop & tablet | 4:3 | 1080*810 | 1690 | Stereo | 128 |
-| Youtube | desktop & tablet | 4:3 | 1080*810 | 910 | Mono | 80 |
-| Youtube | smartphone | 4:3 | 640*480 | 400 | Mono | 128 |
-| Youtube | smartphone | 4:3 | 640*480 | 520 | Stereo | 128 |
-| Youtube | smartphone | 4:3 | 640*480 | 320 | Mono | 80 |
-| Youtube | ctv | 3:4 | 1080*1440 | 2550 | Stereo | 128 |
-| Youtube | ctv | 3:4 | 1080*1440 | 3315 | Stereo | 128 |
-| Youtube | ctv | 3:4 | 1080*1440 | 1785 | Stereo | 128 |
-| Youtube | all devices | 3:4 | 810*1080 | 1300 | Stereo | 128 |
-| Youtube | desktop & tablet | 3:4 | 810*1080 | 1300 | Mono | 80 |
-| Youtube | desktop & tablet | 3:4 | 810*1080 | 1690 | Stereo | 128 |
-| Youtube | desktop & tablet | 3:4 | 810*1080 | 910 | Mono | 80 |
-| Youtube | smartphone | 3:4 | 480*640 | 400 | Mono | 128 |
-| Youtube | smartphone | 3:4 | 480*640 | 520 | Stereo | 128 |
-| Youtube | smartphone | 3:4 | 480*640 | 320 | Mono | 80 |
-| Youtube | ctv | 1:1 | 1080*1080 | 2550 | Stereo | 128 |
-| Youtube | ctv | 1:1 | 1080*1080 | 3315 | Stereo | 128 |
-| Youtube | ctv | 1:1 | 1080*1080 | 1785 | Stereo | 128 |
-| Youtube | all devices | 1:1 | 720*720 | 1300 | Stereo | 128 |
-| Youtube | desktop & tablet | 1:1 | 720*720 | 1300 | Mono | 80 |
-| Youtube | desktop & tablet | 1:1 | 720*720 | 1690 | Stereo | 128 |
-| Youtube | desktop & tablet | 1:1 | 720*720 | 910 | Mono | 80 |
-| Youtube | smartphone | 1:1 | 480*480 | 400 | Mono | 128 |
-| Youtube | smartphone | 1:1 | 480*480 | 520 | Stereo | 128 |
-| Youtube | smartphone | 1:1 | 480*480 | 320 | Mono | 80 |
-| Google Ads | ctv | 16:9 | 1920*1080 | 2550 | Stereo | 128 |
-| Google Ads | ctv | 16:9 | 1920*1080 | 3315 | Stereo | 128 |
-| Google Ads | ctv | 16:9 | 1920*1080 | 1785 | Stereo | 128 |
-| Google Ads | ctv | 16:9 | 1280*720 | 2000 | Stereo | 128 |
-| Google Ads | ctv | 16:9 | 1280*720 | 2600 | Stereo | 128 |
-| Google Ads | ctv | 16:9 | 1280*720 | 1400 | Stereo | 128 |
-| Google Ads | all devices | 16:9 | 1280*720 | 1300 | Stereo | 128 |
-| Google Ads | desktop & tablet | 16:9 | 1280*720 | 1300 | Mono | 80 |
-| Google Ads | desktop & tablet | 16:9 | 1280*720 | 1690 | Stereo | 128 |
-| Google Ads | desktop & tablet | 16:9 | 1280*720 | 910 | Mono | 80 |
-| Google Ads | smartphone | 16:9 | 640*360 | 400 | Mono | 128 |
-| Google Ads | smartphone | 16:9 | 640*360 | 520 | Stereo | 128 |
-| Google Ads | smartphone | 16:9 | 640*360 | 320 | Mono | 80 |
-| Google Ads | ctv | 9:16 | 1080*1920 | 2550 | Stereo | 128 |
-| Google Ads | ctv | 9:16 | 1080*1920 | 3315 | Stereo | 128 |
-| Google Ads | ctv | 9:16 | 1080*1920 | 1785 | Stereo | 128 |
-| Google Ads | ctv | 9:16 | 720*1280 | 2000 | Stereo | 128 |
-| Google Ads | ctv | 9:16 | 720*1280 | 2600 | Stereo | 128 |
-| Google Ads | ctv | 9:16 | 720*1280 | 1400 | Stereo | 128 |
-| Google Ads | all devices | 9:16 | 720*1280 | 1300 | Stereo | 128 |
-| Google Ads | desktop & tablet | 9:16 | 720*1280 | 1300 | Mono | 80 |
-| Google Ads | desktop & tablet | 9:16 | 720*1280 | 1690 | Stereo | 128 |
-| Google Ads | desktop & tablet | 9:16 | 720*1280 | 910 | Mono | 80 |
-| Google Ads | smartphone | 9:16 | 360*640 | 400 | Mono | 128 |
-| Google Ads | smartphone | 9:16 | 360*640 | 520 | Stereo | 128 |
-| Google Ads | smartphone | 9:16 | 360*640 | 320 | Mono | 80 |
-| Google Ads | ctv | 4:3 | 1440*1080 | 2550 | Stereo | 128 |
-| Google Ads | ctv | 4:3 | 1440*1080 | 3315 | Stereo | 128 |
-| Google Ads | ctv | 4:3 | 1440*1080 | 1785 | Stereo | 128 |
-| Google Ads | all devices | 4:3 | 1080*810 | 1300 | Stereo | 128 |
-| Google Ads | desktop & tablet | 4:3 | 1080*810 | 1300 | Mono | 80 |
-| Google Ads | desktop & tablet | 4:3 | 1080*810 | 1690 | Stereo | 128 |
-| Google Ads | desktop & tablet | 4:3 | 1080*810 | 910 | Mono | 80 |
-| Google Ads | smartphone | 4:3 | 640*480 | 400 | Mono | 128 |
-| Google Ads | smartphone | 4:3 | 640*480 | 520 | Stereo | 128 |
-| Google Ads | smartphone | 4:3 | 640*480 | 320 | Mono | 80 |
-| Google Ads | ctv | 3:4 | 1080*1440 | 2550 | Stereo | 128 |
-| Google Ads | ctv | 3:4 | 1080*1440 | 3315 | Stereo | 128 |
-| Google Ads | ctv | 3:4 | 1080*1440 | 1785 | Stereo | 128 |
-| Google Ads | all devices | 3:4 | 810*1080 | 1300 | Stereo | 128 |
-| Google Ads | desktop & tablet | 3:4 | 810*1080 | 1300 | Mono | 80 |
-| Google Ads | desktop & tablet | 3:4 | 810*1080 | 1690 | Stereo | 128 |
-| Google Ads | desktop & tablet | 3:4 | 810*1080 | 910 | Mono | 80 |
-| Google Ads | smartphone | 3:4 | 480*640 | 400 | Mono | 128 |
-| Google Ads | smartphone | 3:4 | 480*640 | 520 | Stereo | 128 |
-| Google Ads | smartphone | 3:4 | 480*640 | 320 | Mono | 80 |
-| Google Ads | ctv | 1:1 | 1080*1080 | 2550 | Stereo | 128 |
-| Google Ads | ctv | 1:1 | 1080*1080 | 3315 | Stereo | 128 |
-| Google Ads | ctv | 1:1 | 1080*1080 | 1785 | Stereo | 128 |
-| Google Ads | all devices | 1:1 | 720*720 | 1300 | Stereo | 128 |
-| Google Ads | desktop & tablet | 1:1 | 720*720 | 1300 | Mono | 80 |
-| Google Ads | desktop & tablet | 1:1 | 720*720 | 1690 | Stereo | 128 |
-| Google Ads | desktop & tablet | 1:1 | 720*720 | 910 | Mono | 80 |
-| Google Ads | smartphone | 1:1 | 480*480 | 400 | Mono | 128 |
-| Google Ads | smartphone | 1:1 | 480*480 | 520 | Stereo | 128 |
-| Google Ads | smartphone | 1:1 | 480*480 | 320 | Mono | 80 |
-| Xandr | ctv | 16:9 | 1920*1080 | 2550 | Stereo | 128 |
-| Xandr | ctv | 16:9 | 1920*1080 | 3315 | Stereo | 128 |
-| Xandr | ctv | 16:9 | 1920*1080 | 1785 | Stereo | 128 |
-| Xandr | ctv | 16:9 | 1280*720 | 2000 | Stereo | 128 |
-| Xandr | ctv | 16:9 | 1280*720 | 2600 | Stereo | 128 |
-| Xandr | ctv | 16:9 | 1280*720 | 1400 | Stereo | 128 |
-| Xandr | all devices | 16:9 | 1280*720 | 1300 | Stereo | 128 |
-| Xandr | desktop & tablet | 16:9 | 1280*720 | 1300 | Mono | 80 |
-| Xandr | desktop & tablet | 16:9 | 1280*720 | 1690 | Stereo | 128 |
-| Xandr | desktop & tablet | 16:9 | 1280*720 | 910 | Mono | 80 |
-| Xandr | smartphone | 16:9 | 640*360 | 400 | Mono | 128 |
-| Xandr | smartphone | 16:9 | 640*360 | 520 | Stereo | 128 |
-| Xandr | smartphone | 16:9 | 640*360 | 320 | Mono | 80 |
-| Xandr | ctv | 9:16 | 1080*1920 | 2550 | Stereo | 128 |
-| Xandr | ctv | 9:16 | 1080*1920 | 3315 | Stereo | 128 |
-| Xandr | ctv | 9:16 | 1080*1920 | 1785 | Stereo | 128 |
-| Xandr | ctv | 9:16 | 720*1280 | 2000 | Stereo | 128 |
-| Xandr | ctv | 9:16 | 720*1280 | 2600 | Stereo | 128 |
-| Xandr | ctv | 9:16 | 720*1280 | 1400 | Stereo | 128 |
-| Xandr | all devices | 9:16 | 720*1280 | 1300 | Stereo | 128 |
-| Xandr | desktop & tablet | 9:16 | 720*1280 | 1300 | Mono | 80 |
-| Xandr | desktop & tablet | 9:16 | 720*1280 | 1690 | Stereo | 128 |
-| Xandr | desktop & tablet | 9:16 | 720*1280 | 910 | Mono | 80 |
-| Xandr | smartphone | 9:16 | 360*640 | 400 | Mono | 128 |
-| Xandr | smartphone | 9:16 | 360*640 | 520 | Stereo | 128 |
-| Xandr | smartphone | 9:16 | 360*640 | 320 | Mono | 80 |
-| Xandr | ctv | 4:3 | 1440*1080 | 2550 | Stereo | 128 |
-| Xandr | ctv | 4:3 | 1440*1080 | 3315 | Stereo | 128 |
-| Xandr | ctv | 4:3 | 1440*1080 | 1785 | Stereo | 128 |
-| Xandr | all devices | 4:3 | 1080*810 | 1300 | Stereo | 128 |
-| Xandr | desktop & tablet | 4:3 | 1080*810 | 1300 | Mono | 80 |
-| Xandr | desktop & tablet | 4:3 | 1080*810 | 1690 | Stereo | 128 |
-| Xandr | desktop & tablet | 4:3 | 1080*810 | 910 | Mono | 80 |
-| Xandr | smartphone | 4:3 | 640*480 | 400 | Mono | 128 |
-| Xandr | smartphone | 4:3 | 640*480 | 520 | Stereo | 128 |
-| Xandr | smartphone | 4:3 | 640*480 | 320 | Mono | 80 |
-| Xandr | ctv | 3:4 | 1080*1440 | 2550 | Stereo | 128 |
-| Xandr | ctv | 3:4 | 1080*1440 | 3315 | Stereo | 128 |
-| Xandr | ctv | 3:4 | 1080*1440 | 1785 | Stereo | 128 |
-| Xandr | all devices | 3:4 | 810*1080 | 1300 | Stereo | 128 |
-| Xandr | desktop & tablet | 3:4 | 810*1080 | 1300 | Mono | 80 |
-| Xandr | desktop & tablet | 3:4 | 810*1080 | 1690 | Stereo | 128 |
-| Xandr | desktop & tablet | 3:4 | 810*1080 | 910 | Mono | 80 |
-| Xandr | smartphone | 3:4 | 480*640 | 400 | Mono | 128 |
-| Xandr | smartphone | 3:4 | 480*640 | 520 | Stereo | 128 |
-| Xandr | smartphone | 3:4 | 480*640 | 320 | Mono | 80 |
-| Xandr | ctv | 1:1 | 1080*1080 | 2550 | Stereo | 128 |
-| Xandr | ctv | 1:1 | 1080*1080 | 3315 | Stereo | 128 |
-| Xandr | ctv | 1:1 | 1080*1080 | 1785 | Stereo | 128 |
-| Xandr | all devices | 1:1 | 720*720 | 1300 | Stereo | 128 |
-| Xandr | desktop & tablet | 1:1 | 720*720 | 1300 | Mono | 80 |
-| Xandr | desktop & tablet | 1:1 | 720*720 | 1690 | Stereo | 128 |
-| Xandr | desktop & tablet | 1:1 | 720*720 | 910 | Mono | 80 |
-| Xandr | smartphone | 1:1 | 480*480 | 400 | Mono | 128 |
-| Xandr | smartphone | 1:1 | 480*480 | 520 | Stereo | 128 |
-| Xandr | smartphone | 1:1 | 480*480 | 320 | Mono | 80 |
-| The Trade Desk | ctv | 16:9 | 1920*1080 | 2550 | Stereo | 128 |
-| The Trade Desk | ctv | 16:9 | 1920*1080 | 3315 | Stereo | 128 |
-| The Trade Desk | ctv | 16:9 | 1920*1080 | 1785 | Stereo | 128 |
-| The Trade Desk | ctv | 16:9 | 1280*720 | 2000 | Stereo | 128 |
-| The Trade Desk | ctv | 16:9 | 1280*720 | 2600 | Stereo | 128 |
-| The Trade Desk | ctv | 16:9 | 1280*720 | 1400 | Stereo | 128 |
-| The Trade Desk | all devices | 16:9 | 1280*720 | 1300 | Stereo | 128 |
-| The Trade Desk | desktop & tablet | 16:9 | 1280*720 | 1300 | Mono | 80 |
-| The Trade Desk | desktop & tablet | 16:9 | 1280*720 | 1690 | Stereo | 128 |
-| The Trade Desk | desktop & tablet | 16:9 | 1280*720 | 910 | Mono | 80 |
-| The Trade Desk | smartphone | 16:9 | 640*360 | 400 | Mono | 128 |
-| The Trade Desk | smartphone | 16:9 | 640*360 | 520 | Stereo | 128 |
-| The Trade Desk | smartphone | 16:9 | 640*360 | 320 | Mono | 80 |
-| The Trade Desk | ctv | 9:16 | 1080*1920 | 2550 | Stereo | 128 |
-| The Trade Desk | ctv | 9:16 | 1080*1920 | 3315 | Stereo | 128 |
-| The Trade Desk | ctv | 9:16 | 1080*1920 | 1785 | Stereo | 128 |
-| The Trade Desk | ctv | 9:16 | 720*1280 | 2000 | Stereo | 128 |
-| The Trade Desk | ctv | 9:16 | 720*1280 | 2600 | Stereo | 128 |
-| The Trade Desk | ctv | 9:16 | 720*1280 | 1400 | Stereo | 128 |
-| The Trade Desk | all devices | 9:16 | 720*1280 | 1300 | Stereo | 128 |
-| The Trade Desk | desktop & tablet | 9:16 | 720*1280 | 1300 | Mono | 80 |
-| The Trade Desk | desktop & tablet | 9:16 | 720*1280 | 1690 | Stereo | 128 |
-| The Trade Desk | desktop & tablet | 9:16 | 720*1280 | 910 | Mono | 80 |
-| The Trade Desk | smartphone | 9:16 | 360*640 | 400 | Mono | 128 |
-| The Trade Desk | smartphone | 9:16 | 360*640 | 520 | Stereo | 128 |
-| The Trade Desk | smartphone | 9:16 | 360*640 | 320 | Mono | 80 |
-| The Trade Desk | ctv | 4:3 | 1440*1080 | 2550 | Stereo | 128 |
-| The Trade Desk | ctv | 4:3 | 1440*1080 | 3315 | Stereo | 128 |
-| The Trade Desk | ctv | 4:3 | 1440*1080 | 1785 | Stereo | 128 |
-| The Trade Desk | all devices | 4:3 | 1080*810 | 1300 | Stereo | 128 |
-| The Trade Desk | desktop & tablet | 4:3 | 1080*810 | 1300 | Mono | 80 |
-| The Trade Desk | desktop & tablet | 4:3 | 1080*810 | 1690 | Stereo | 128 |
-| The Trade Desk | desktop & tablet | 4:3 | 1080*810 | 910 | Mono | 80 |
-| The Trade Desk | smartphone | 4:3 | 640*480 | 400 | Mono | 128 |
-| The Trade Desk | smartphone | 4:3 | 640*480 | 520 | Stereo | 128 |
-| The Trade Desk | smartphone | 4:3 | 640*480 | 320 | Mono | 80 |
-| The Trade Desk | ctv | 3:4 | 1080*1440 | 2550 | Stereo | 128 |
-| The Trade Desk | ctv | 3:4 | 1080*1440 | 3315 | Stereo | 128 |
-| The Trade Desk | ctv | 3:4 | 1080*1440 | 1785 | Stereo | 128 |
-| The Trade Desk | all devices | 3:4 | 810*1080 | 1300 | Stereo | 128 |
-| The Trade Desk | desktop & tablet | 3:4 | 810*1080 | 1300 | Mono | 80 |
-| The Trade Desk | desktop & tablet | 3:4 | 810*1080 | 1690 | Stereo | 128 |
-| The Trade Desk | desktop & tablet | 3:4 | 810*1080 | 910 | Mono | 80 |
-| The Trade Desk | smartphone | 3:4 | 480*640 | 400 | Mono | 128 |
-| The Trade Desk | smartphone | 3:4 | 480*640 | 520 | Stereo | 128 |
-| The Trade Desk | smartphone | 3:4 | 480*640 | 320 | Mono | 80 |
-| The Trade Desk | ctv | 1:1 | 1080*1080 | 2550 | Stereo | 128 |
-| The Trade Desk | ctv | 1:1 | 1080*1080 | 3315 | Stereo | 128 |
-| The Trade Desk | ctv | 1:1 | 1080*1080 | 1785 | Stereo | 128 |
-| The Trade Desk | all devices | 1:1 | 720*720 | 1300 | Stereo | 128 |
-| The Trade Desk | desktop & tablet | 1:1 | 720*720 | 1300 | Mono | 80 |
-| The Trade Desk | desktop & tablet | 1:1 | 720*720 | 1690 | Stereo | 128 |
-| The Trade Desk | desktop & tablet | 1:1 | 720*720 | 910 | Mono | 80 |
-| The Trade Desk | smartphone | 1:1 | 480*480 | 400 | Mono | 128 |
-| The Trade Desk | smartphone | 1:1 | 480*480 | 520 | Stereo | 128 |
-| The Trade Desk | smartphone | 1:1 | 480*480 | 320 | Mono | 80 |
-| Amazon DSP | ctv | 16:9 | 1920*1080 | 4000 | Stereo | 128 |
-| Amazon DSP | ctv | 16:9 | 1920*1080 | 5200 | Stereo | 128 |
-| Amazon DSP | ctv | 16:9 | 1920*1080 | 2800 | Stereo | 128 |
-| Amazon DSP | all devices | 16:9 | 1280*720 | 2200 | Stereo | 128 |
-| Amazon DSP | desktop & tablet | 16:9 | 1280*720 | 2200 | Mono | 80 |
-| Amazon DSP | desktop & tablet | 16:9 | 1280*720 | 2860 | Stereo | 128 |
-| Amazon DSP | desktop & tablet | 16:9 | 1280*720 | 1540 | Mono | 80 |
-| Amazon DSP | smartphone | 16:9 | 640*360 | 550 | Mono | 80 |
-| Amazon DSP | smartphone | 16:9 | 640*360 | 715 | Stereo | 128 |
-| Amazon DSP | smartphone | 16:9 | 640*360 | 440 | Mono | 80 |
-| Amazon DSP | ctv | 9:16 | 1080*1920 | 4000 | Stereo | 128 |
-| Amazon DSP | ctv | 9:16 | 1080*1920 | 5200 | Stereo | 128 |
-| Amazon DSP | ctv | 9:16 | 1080*1920 | 2800 | Stereo | 128 |
-| Amazon DSP | all devices | 9:16 | 720*1280 | 2200 | Stereo | 128 |
-| Amazon DSP | desktop & tablet | 9:16 | 720*1280 | 2200 | Mono | 80 |
-| Amazon DSP | desktop & tablet | 9:16 | 720*1280 | 2860 | Stereo | 128 |
-| Amazon DSP | desktop & tablet | 9:16 | 720*1280 | 1540 | Mono | 80 |
-| Amazon DSP | smartphone | 9:16 | 360*640 | 550 | Mono | 80 |
-| Amazon DSP | smartphone | 9:16 | 360*640 | 715 | Stereo | 128 |
-| Amazon DSP | smartphone | 9:16 | 360*640 | 440 | Mono | 80 |
-| Amazon DSP | ctv | 4:3 | 1440*1080 | 4000 | Stereo | 128 |
-| Amazon DSP | ctv | 4:3 | 1440*1080 | 5200 | Stereo | 128 |
-| Amazon DSP | ctv | 4:3 | 1440*1080 | 2800 | Stereo | 128 |
-| Amazon DSP | all devices | 4:3 | 1080*810 | 2200 | Stereo | 128 |
-| Amazon DSP | desktop & tablet | 4:3 | 1080*810 | 2200 | Mono | 80 |
-| Amazon DSP | desktop & tablet | 4:3 | 1080*810 | 2860 | Stereo | 128 |
-| Amazon DSP | desktop & tablet | 4:3 | 1080*810 | 1540 | Mono | 80 |
-| Amazon DSP | smartphone | 4:3 | 640*480 | 550 | Mono | 80 |
-| Amazon DSP | smartphone | 4:3 | 640*480 | 715 | Stereo | 128 |
-| Amazon DSP | smartphone | 4:3 | 640*480 | 440 | Mono | 80 |
-| Amazon DSP | ctv | 3:4 | 1080*1440 | 4000 | Stereo | 128 |
-| Amazon DSP | ctv | 3:4 | 1080*1440 | 5200 | Stereo | 128 |
-| Amazon DSP | ctv | 3:4 | 1080*1440 | 2800 | Stereo | 128 |
-| Amazon DSP | all devices | 3:4 | 810*1080 | 2200 | Stereo | 128 |
-| Amazon DSP | desktop & tablet | 3:4 | 810*1080 | 2200 | Mono | 80 |
-| Amazon DSP | desktop & tablet | 3:4 | 810*1080 | 2860 | Stereo | 128 |
-| Amazon DSP | desktop & tablet | 3:4 | 810*1080 | 1540 | Mono | 80 |
-| Amazon DSP | smartphone | 3:4 | 480*640 | 550 | Mono | 80 |
-| Amazon DSP | smartphone | 3:4 | 480*640 | 715 | Stereo | 128 |
-| Amazon DSP | smartphone | 3:4 | 480*640 | 440 | Mono | 80 |
-| Amazon DSP | ctv | 1:1 | 1080*1080 | 4000 | Stereo | 128 |
-| Amazon DSP | ctv | 1:1 | 1080*1080 | 5200 | Stereo | 128 |
-| Amazon DSP | ctv | 1:1 | 1080*1080 | 2800 | Stereo | 128 |
-| Amazon DSP | all devices | 1:1 | 720*720 | 2200 | Stereo | 128 |
-| Amazon DSP | desktop & tablet | 1:1 | 720*720 | 2200 | Mono | 80 |
-| Amazon DSP | desktop & tablet | 1:1 | 720*720 | 2860 | Stereo | 128 |
-| Amazon DSP | desktop & tablet | 1:1 | 720*720 | 1540 | Mono | 80 |
-| Amazon DSP | smartphone | 1:1 | 480*480 | 550 | Mono | 80 |
-| Amazon DSP | smartphone | 1:1 | 480*480 | 715 | Stereo | 128 |
-| Amazon DSP | smartphone | 1:1 | 480*480 | 440 | Mono | 80 |
-| Meta (Facebook, Instagram,  Audience Network) | all devicess | 4:5 | 720*900 | 700 | Stereo | 128 |
-| Meta (Facebook, Instagram,  Audience Network) | all devicess | 4:5 | 720*900 | 1000 | Stereo | 128 |
-| Meta (Facebook, Instagram,  Audience Network) | all devicess | 4:5 | 720*900 | 490 | Mono | 80 |
-| Meta (Facebook, Instagram,  Audience Network) | all devicess | 1:1 | 720*720 | 600 | Stereo | 128 |
-| Meta (Facebook, Instagram,  Audience Network) | all devicess | 1:1 | 720*720 | 1000 | Stereo | 128 |
-| Meta (Facebook, Instagram,  Audience Network) | all devicess | 1:1 | 720*720 | 480 | Mono | 80 |
-| Meta (Facebook, Instagram,  Audience Network) | all devicess | 9:16 | 720*1280 | 1000 | Stereo | 128 |
-| Meta (Facebook, Instagram,  Audience Network) | all devicess | 9:16 | 720*1280 | 1300 | Stereo | 128 |
-| Meta (Facebook, Instagram,  Audience Network) | all devicess | 9:16 | 720*1280 | 700 | Mono | 80 |
-| Meta (Facebook, Instagram,  Audience Network) | all devicess | 16:9 | 1280*720 | 1000 | Stereo | 128 |
-| Meta (Facebook, Instagram,  Audience Network) | all devicess | 16:9 | 1280*720 | 1300 | Stereo | 128 |
-| Meta (Facebook, Instagram, Audience Network) | all devicess | 16:9 | 1280*720 | 700 | Mono | 80 |
-| Meta (Facebook, Instagram,  Audience Network) | all devicess | 5:4 | 900*720 | 700 | Stereo | 128 |
-| Meta (Facebook, Instagram,  Audience Network) | all devicess | 5:4 | 900*720 | 1000 | Stereo | 128 |
-| Meta (Facebook, Instagram,  Audience Network) | all devicess | 5:4 | 900*720 | 490 | Mono | 80 |
-| Snapchat | all devicess | 9:16 | 720*1280 | 1000 | Stereo | 128 |
-| Snapchat | smartphone | 9:16 | 360*640 | 550 | Mono | 80 |
-| Snapchat | smartphone | 9:16 | 360*640 | 715 | Stereo | 128 |
-| Snapchat | smartphone | 9:16 | 360*640 | 440 | Mono | 80 |
-| Pinterest | all devicess | 9:16 | 720*1280 | 1000 | Stereo | 128 |
-| Pinterest | all devicess | 9:16 | 720*1280 | 1300 | Stereo | 128 |
-| Pinterest | all devicess | 9:16 | 720*1280 | 700 | Mono | 80 |
-| Pinterest | all devicess | 4:5 | 720*900 | 700 | Stereo | 128 |
-| Pinterest | all devicess | 4:5 | 720*900 | 1000 | Stereo | 128 |
-| Pinterest | all devicess | 4:5 | 720*900 | 490 | Mono | 80 |
-| Pinterest | all devicess | 1:1 | 720*720 | 600 | Stereo | 128 |
-| Pinterest | all devicess | 1:1 | 720*720 | 1000 | Stereo | 128 |
-| Pinterest | all devicess | 1:1 | 720*720 | 420 | Mono | 80 |
-| Snapchat | all devicess | 16:9 | 1280*720 | 1000 | Stereo | 128 |
-| Snapchat | all devicess | 16:9 | 1280*720 | 1300 | Stereo | 128 |
-| Snapchat | all devicess | 16:9 | 1280*720 | 700 | Mono | 80 |
-| Pinterest | all devicess | 5:4 | 900*720 | 1000 | Stereo | 128 |
-| Pinterest | all devicess | 5:4 | 900*720 | 1300 | Stereo | 128 |
-| Pinterest | all devicess | 5:4 | 900*720 | 700 | Mono | 80 |
-| Generic DSP | ctv | 16:9 | 1920*1080 | 2550 | Stereo | 128 |
-| Generic DSP | ctv | 16:9 | 1920*1080 | 3315 | Stereo | 128 |
-| Generic DSP | ctv | 16:9 | 1920*1080 | 1785 | Stereo | 128 |
-| Generic DSP | ctv | 16:9 | 1280*720 | 2000 | Stereo | 128 |
-| Generic DSP | ctv | 16:9 | 1280*720 | 2600 | Stereo | 128 |
-| Generic DSP | ctv | 16:9 | 1280*720 | 1400 | Stereo | 128 |
-| Generic DSP | all devices | 16:9 | 1280*720 | 1300 | Stereo | 128 |
-| Generic DSP | desktop & tablet | 16:9 | 1280*720 | 1300 | Mono | 80 |
-| Generic DSP | desktop & tablet | 16:9 | 1280*720 | 1690 | Stereo | 128 |
-| Generic DSP | desktop & tablet | 16:9 | 1280*720 | 910 | Mono | 80 |
-| Generic DSP | smartphone | 16:9 | 640*360 | 400 | Mono | 128 |
-| Generic DSP | smartphone | 16:9 | 640*360 | 520 | Stereo | 128 |
-| Generic DSP | smartphone | 16:9 | 640*360 | 320 | Mono | 80 |
-| Generic DSP | ctv | 9:16 | 1080*1920 | 2550 | Stereo | 128 |
-| Generic DSP | ctv | 9:16 | 1080*1920 | 3315 | Stereo | 128 |
-| Generic DSP | ctv | 9:16 | 1080*1920 | 1785 | Stereo | 128 |
-| Generic DSP | ctv | 9:16 | 720*1280 | 2000 | Stereo | 128 |
-| Generic DSP | ctv | 9:16 | 720*1280 | 2600 | Stereo | 128 |
-| Generic DSP | ctv | 9:16 | 720*1280 | 1400 | Stereo | 128 |
-| Generic DSP | all devices | 9:16 | 720*1280 | 1300 | Stereo | 128 |
-| Generic DSP | desktop & tablet | 9:16 | 720*1280 | 1300 | Mono | 80 |
-| Generic DSP | desktop & tablet | 9:16 | 720*1280 | 1690 | Stereo | 128 |
-| Generic DSP | desktop & tablet | 9:16 | 720*1280 | 910 | Mono | 80 |
-| Generic DSP | smartphone | 9:16 | 360*640 | 400 | Mono | 128 |
-| Generic DSP | smartphone | 9:16 | 360*640 | 520 | Stereo | 128 |
-| Generic DSP | smartphone | 9:16 | 360*640 | 320 | Mono | 80 |
-| Generic DSP | ctv | 4:3 | 1440*1080 | 2550 | Stereo | 128 |
-| Generic DSP | ctv | 4:3 | 1440*1080 | 3315 | Stereo | 128 |
-| Generic DSP | ctv | 4:3 | 1440*1080 | 1785 | Stereo | 128 |
-| Generic DSP | all devices | 4:3 | 1080*810 | 1300 | Stereo | 128 |
-| Generic DSP | desktop & tablet | 4:3 | 1080*810 | 1300 | Mono | 80 |
-| Generic DSP | desktop & tablet | 4:3 | 1080*810 | 1690 | Stereo | 128 |
-| Generic DSP | desktop & tablet | 4:3 | 1080*810 | 910 | Mono | 80 |
-| Generic DSP | smartphone | 4:3 | 640*480 | 400 | Mono | 128 |
-| Generic DSP | smartphone | 4:3 | 640*480 | 520 | Stereo | 128 |
-| Generic DSP | smartphone | 4:3 | 640*480 | 320 | Mono | 80 |
-| Generic DSP | ctv | 3:4 | 1080*1440 | 2550 | Stereo | 128 |
-| Generic DSP | ctv | 3:4 | 1080*1440 | 3315 | Stereo | 128 |
-| Generic DSP | ctv | 3:4 | 1080*1440 | 1785 | Stereo | 128 |
-| Generic DSP | all devices | 3:4 | 810*1080 | 1300 | Stereo | 128 |
-| Generic DSP | desktop & tablet | 3:4 | 810*1080 | 1300 | Mono | 80 |
-| Generic DSP | desktop & tablet | 3:4 | 810*1080 | 1690 | Stereo | 128 |
-| Generic DSP | desktop & tablet | 3:4 | 810*1080 | 910 | Mono | 80 |
-| Generic DSP | smartphone | 3:4 | 480*640 | 400 | Mono | 128 |
-| Generic DSP | smartphone | 3:4 | 480*640 | 520 | Stereo | 128 |
-| Generic DSP | smartphone | 3:4 | 480*640 | 320 | Mono | 80 |
-| Generic DSP | ctv | 1:1 | 1080*1080 | 2550 | Stereo | 128 |
-| Generic DSP | ctv | 1:1 | 1080*1080 | 3315 | Stereo | 128 |
-| Generic DSP | ctv | 1:1 | 1080*1080 | 1785 | Stereo | 128 |
-| Generic DSP | all devices | 1:1 | 720*720 | 1300 | Stereo | 128 |
-| Generic DSP | desktop & tablet | 1:1 | 720*720 | 1300 | Mono | 80 |
-| Generic DSP | desktop & tablet | 1:1 | 720*720 | 1690 | Stereo | 128 |
-| Generic DSP | desktop & tablet | 1:1 | 720*720 | 910 | Mono | 80 |
-| Generic DSP | smartphone | 1:1 | 480*480 | 400 | Mono | 128 |
-| Generic DSP | smartphone | 1:1 | 480*480 | 520 | Stereo | 128 |
-| Generic DSP | smartphone | 1:1 | 480*480 | 320 | Mono | 80 |
+| Platform | Sub output file type | End name of sub output file | Aspect ratio | Size | video kbps | old video kbps | audio kbps | New device name | Sound |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Amazon DSP | Max GHG reduction | Max GHG reduction - all devices - Amazon DSP | 1:1 | 720*720 | 2200 | 2200 | 128 | all devices | Stereo |
+| Amazon DSP | Prime video & Freevee specific | Prime video & Freevee specific - CTV - Amazon DSP | 1:1 | 1080*1080 | 17000 | 17000 | 192 | CTV | Stereo |
+| Amazon DSP | Recommended | Recommended - all devices - Amazon DSP | 1:1 | 1080*1080 | 4000 | 4000 | 128 | all devices | Stereo |
+| Amazon DSP | Max GHG reduction | Max GHG reduction - all devices - Amazon DSP | 16:9 | 1280*720 | 2200 | 2200 | 128 | all devices | Stereo |
+| Amazon DSP | Prime video & Freevee specific | Prime video & Freevee specific - CTV - Amazon DSP | 16:9 | 1920*1080 | 17000 | 17000 | 192 | CTV | Stereo |
+| Amazon DSP | Recommended | Recommended - all devices - Amazon DSP | 16:9 | 1920*1080 | 4000 | 4000 | 128 | all devices | Stereo |
+| Amazon DSP | Max GHG reduction | Max GHG reduction - all devices - Amazon DSP | 3:4 | 720*960 | 2200 | 2200 | 128 | all devices | Stereo |
+| Amazon DSP | Prime video & Freevee specific | Prime video & Freevee specific - CTV - Amazon DSP | 3:4 | 1080*1440 | 17000 | 17000 | 192 | CTV | Stereo |
+| Amazon DSP | Recommended | Recommended - all devices - Amazon DSP | 3:4 | 1080*1440 | 4000 | 4000 | 128 | all devices | Stereo |
+| Amazon DSP | Max GHG reduction | Max GHG reduction - all devices - Amazon DSP | 4:3 | 960*720 | 2200 | 2200 | 128 | all devices | Stereo |
+| Amazon DSP | Prime video & Freevee specific | Prime video & Freevee specific - CTV - Amazon DSP | 4:3 | 1440*1080 | 17000 | 17000 | 192 | CTV | Stereo |
+| Amazon DSP | Recommended | Recommended - all devices - Amazon DSP | 4:3 | 1440*1080 | 4000 | 4000 | 128 | all devices | Stereo |
+| Amazon DSP | Max GHG reduction | Max GHG reduction - all devices - Amazon DSP | 9:16 | 720*1280 | 2200 | 2200 | 128 | all devices | Stereo |
+| Amazon DSP | Prime video & Freevee specific | Prime video & Freevee specific - CTV - Amazon DSP | 9:16 | 1080*1920 | 17000 | 17000 | 192 | CTV | Stereo |
+| Amazon DSP | Recommended | Recommended - all devices - Amazon DSP | 9:16 | 1080*1920 | 4000 | 4000 | 128 | all devices | Stereo |
+| DV360 | CTV specific | CTV specific - CTV - DV360 | 1:1 | 1080*1080 | 17000 | 17000 | 192 | CTV | Stereo |
+| DV360 | Max GHG reduction | Max GHG reduction - all devices - DV360 | 1:1 | 720*720 | 1560 | 1300 | 128 | all devices | Stereo |
+| DV360 | Recommended | Recommended - all devices - DV360 | 1:1 | 720*720 | 2028 | 1690 | 128 | all devices | Stereo |
+| DV360 | Max GHG reduction | Max GHG reduction - all devices - DV360 | 16:9 | 1280*720 | 1560 | 1300 | 128 | all devices | Stereo |
+| DV360 | CTV specific | CTV specific - CTV - DV360 | 16:9 | 1920*1080 | 17000 | 17000 | 192 | CTV | Stereo |
+| DV360 | Recommended | Recommended - all devices - DV360 | 16:9 | 1280*720 | 2400 | 2000 | 128 | all devices | Stereo |
+| DV360 | CTV specific | CTV specific - CTV - DV360 | 3:4 | 1080*1440 | 17000 | 17000 | 192 | CTV | Stereo |
+| DV360 | Max GHG reduction | Max GHG reduction - all devices - DV360 | 3:4 | 720*960 | 1560 | 1300 | 128 | all devices | Stereo |
+| DV360 | Recommended | Recommended - all devices - DV360 | 3:4 | 720*960 | 2028 | 1690 | 128 | all devices | Stereo |
+| DV360 | Max GHG reduction | Max GHG reduction - all devices - DV360 | 4:3 | 960*720 | 1560 | 1300 | 128 | all devices | Stereo |
+| DV360 | CTV specific | CTV specific - CTV - DV360 | 4:3 | 1440*1080 | 17000 | 17000 | 192 | CTV | Stereo |
+| DV360 | Recommended | Recommended - all devices - DV360 | 4:3 | 960*720 | 2028 | 1690 | 128 | all devices | Stereo |
+| DV360 | Recommended | Recommended - all devices - DV360 | 4:5 | 720*900 | 2028 | 1690 | 128 | all devices | Stereo |
+| DV360 | CTV specific | CTV specific - CTV - DV360 | 4:5 | 720*900 | 17000 | 17000 | 192 | CTV | Stereo |
+| DV360 | Max GHG reduction | Max GHG reduction - all devices - DV360 | 4:5 | 720*900 | 1560 | 1300 | 128 | all devices | Stereo |
+| DV360 | Recommended | Recommended - all devices - DV360 | 5:4 | 900*720 | 2028 | 1690 | 128 | all devices | Stereo |
+| DV360 | CTV specific | CTV specific - CTV - DV360 | 5:4 | 900*720 | 17000 | 17000 | 192 | CTV | Stereo |
+| DV360 | Max GHG reduction | Max GHG reduction - all devices - DV360 | 5:4 | 900*720 | 1560 | 1300 | 128 | all devices | Stereo |
+| DV360 | Max GHG reduction | Max GHG reduction - all devices - DV360 | 9:16 | 720*1280 | 1560 | 1300 | 128 | all devices | Stereo |
+| DV360 | CTV specific | CTV specific - CTV - DV360 | 9:16 | 1080*1920 | 17000 | 17000 | 192 | CTV | Stereo |
+| DV360 | Recommended | Recommended - all devices - DV360 | 9:16 | 720*1280 | 2400 | 2000 | 128 | all devices | Stereo |
+| Generic DSP | CTV specific | CTV specific - CTV - Generic DSP | 1:1 | 1080*1080 | 3315 | 3315 | 128 | CTV | Stereo |
+| Generic DSP | Max GHG reduction | Max GHG reduction - all devices - Generic DSP | 1:1 | 720*720 | 1300 | 1300 | 128 | all devices | Stereo |
+| Generic DSP | Recommended | Recommended - all devices - Generic DSP | 1:1 | 720*720 | 1690 | 1690 | 128 | all devices | Stereo |
+| Generic DSP | Max GHG reduction | Max GHG reduction - all devices - Generic DSP | 16:9 | 1280*720 | 1300 | 1300 | 128 | all devices | Stereo |
+| Generic DSP | CTV specific | CTV specific - CTV - Generic DSP | 16:9 | 1920*1080 | 3315 | 3315 | 128 | CTV | Stereo |
+| Generic DSP | Recommended | Recommended - all devices - Generic DSP | 16:9 | 1280*720 | 2000 | 2000 | 128 | all devices | Stereo |
+| Generic DSP | CTV specific | CTV specific - CTV - Generic DSP | 3:4 | 1080*1440 | 3315 | 3315 | 128 | CTV | Stereo |
+| Generic DSP | Max GHG reduction | Max GHG reduction - all devices - Generic DSP | 3:4 | 720*960 | 1300 | 1300 | 128 | all devices | Stereo |
+| Generic DSP | Recommended | Recommended - all devices - Generic DSP | 3:4 | 720*960 | 1690 | 1690 | 128 | all devices | Stereo |
+| Generic DSP | Max GHG reduction | Max GHG reduction - all devices - Generic DSP | 4:3 | 960*720 | 1300 | 1300 | 128 | all devices | Stereo |
+| Generic DSP | CTV specific | CTV specific - CTV - Generic DSP | 4:3 | 1440*1080 | 3315 | 3315 | 128 | CTV | Stereo |
+| Generic DSP | Recommended | Recommended - all devices - Generic DSP | 4:3 | 960*720 | 1690 | 1690 | 128 | all devices | Stereo |
+| Generic DSP | Recommended | Recommended - all devices - Generic DSP | 4:5 | 720*900 | 1690 | 1690 | 128 | all devices | Stereo |
+| Generic DSP | CTV specific | CTV specific - CTV - Generic DSP | 4:5 | 720*900 | 3315 | 3315 | 128 | CTV | Stereo |
+| Generic DSP | Max GHG reduction | Max GHG reduction - all devices - Generic DSP | 4:5 | 720*900 | 1300 | 1300 | 128 | all devices | Stereo |
+| Generic DSP | Recommended | Recommended - all devices - Generic DSP | 5:4 | 900*720 | 1690 | 1690 | 128 | all devices | Stereo |
+| Generic DSP | CTV specific | CTV specific - CTV - Generic DSP | 5:4 | 900*720 | 3315 | 3315 | 128 | CTV | Stereo |
+| Generic DSP | Max GHG reduction | Max GHG reduction - all devices - Generic DSP | 5:4 | 900*720 | 1300 | 1300 | 128 | all devices | Stereo |
+| Generic DSP | Max GHG reduction | Max GHG reduction - all devices - Generic DSP | 9:16 | 720*1280 | 1300 | 1300 | 128 | all devices | Stereo |
+| Generic DSP | CTV specific | CTV specific - CTV - Generic DSP | 9:16 | 1080*1920 | 3315 | 3315 | 128 | CTV | Stereo |
+| Generic DSP | Recommended | Recommended - all devices - Generic DSP | 9:16 | 720*1280 | 2000 | 2000 | 128 | all devices | Stereo |
+| Google Ads | CTV specific | CTV specific - CTV - Google Ads | 1:1 | 1080*1080 | 17000 | 17000 | 192 | CTV | Stereo |
+| Google Ads | Max GHG reduction | Max GHG reduction - all devices - Google Ads | 1:1 | 720*720 | 1560 | 1300 | 128 | all devices | Stereo |
+| Google Ads | Recommended | Recommended - all devices - Google Ads | 1:1 | 720*720 | 2028 | 1690 | 128 | all devices | Stereo |
+| Google Ads | Max GHG reduction | Max GHG reduction - all devices - Google Ads | 16:9 | 1280*720 | 1560 | 1300 | 128 | all devices | Stereo |
+| Google Ads | CTV specific | CTV specific - CTV - Google Ads | 16:9 | 1920*1080 | 17000 | 17000 | 192 | CTV | Stereo |
+| Google Ads | Recommended | Recommended - all devices - Google Ads | 16:9 | 1280*720 | 2400 | 2000 | 128 | all devices | Stereo |
+| Google Ads | CTV specific | CTV specific - CTV - Google Ads | 3:4 | 1080*1440 | 17000 | 17000 | 192 | CTV | Stereo |
+| Google Ads | Max GHG reduction | Max GHG reduction - all devices - Google Ads | 3:4 | 720*960 | 1560 | 1300 | 128 | all devices | Stereo |
+| Google Ads | Recommended | Recommended - all devices - Google Ads | 3:4 | 720*960 | 2028 | 1690 | 128 | all devices | Stereo |
+| Google Ads | Max GHG reduction | Max GHG reduction - all devices - Google Ads | 4:3 | 960*720 | 1560 | 1300 | 128 | all devices | Stereo |
+| Google Ads | CTV specific | CTV specific - CTV - Google Ads | 4:3 | 1440*1080 | 17000 | 17000 | 192 | CTV | Stereo |
+| Google Ads | Recommended | Recommended - all devices - Google Ads | 4:3 | 960*720 | 2028 | 1690 | 128 | all devices | Stereo |
+| Google Ads | Recommended | Recommended - all devices - Google Ads | 4:5 | 720*900 | 2028 | 1690 | 128 | all devices | Stereo |
+| Google Ads | CTV specific | CTV specific - CTV - Google Ads | 4:5 | 720*900 | 17000 | 17000 | 192 | CTV | Stereo |
+| Google Ads | Max GHG reduction | Max GHG reduction - all devices - Google Ads | 4:5 | 720*900 | 1560 | 1300 | 128 | all devices | Stereo |
+| Google Ads | Recommended | Recommended - all devices - Google Ads | 5:4 | 900*720 | 2028 | 1690 | 128 | all devices | Stereo |
+| Google Ads | CTV specific | CTV specific - CTV - Google Ads | 5:4 | 900*720 | 17000 | 17000 | 192 | CTV | Stereo |
+| Google Ads | Max GHG reduction | Max GHG reduction - all devices - Google Ads | 5:4 | 900*720 | 1560 | 1300 | 128 | all devices | Stereo |
+| Google Ads | Max GHG reduction | Max GHG reduction - all devices - Google Ads | 9:16 | 720*1280 | 1560 | 1300 | 128 | all devices | Stereo |
+| Google Ads | CTV specific | CTV specific - CTV - Google Ads | 9:16 | 1080*1920 | 17000 | 17000 | 192 | CTV | Stereo |
+| Google Ads | Recommended | Recommended - all devices - Google Ads | 9:16 | 720*1280 | 2400 | 2000 | 128 | all devices | Stereo |
+| Meta | Max GHG reduction | Max GHG reduction - all devices - Meta | 1:1 | 720*720 | 840 | 700 | 128 | all devices | Stereo |
+| Meta | Recommended | Recommended - all devices - Meta | 1:1 | 720*720 | 1200 | 1000 | 128 | all devices | Stereo |
+| Meta | Max GHG reduction | Max GHG reduction - all devices - Meta | 16:9 | 1280*720 | 1100 | 1000 | 128 | all devices | Stereo |
+| Meta | Recommended | Recommended - all devices - Meta | 16:9 | 1280*720 | 1400 | 1300 | 128 | all devices | Stereo |
+| Meta | Max GHG reduction | Max GHG reduction - all devices - Meta | 4:5 | 720*900 | 840 | 700 | 128 | all devices | Stereo |
+| Meta | Recommended | Recommended - all devices - Meta | 4:5 | 720*900 | 1200 | 1000 | 128 | all devices | Stereo |
+| Meta | Max GHG reduction | Max GHG reduction - all devices - Meta | 5:4 | 900*720 | 840 | 700 | 128 | all devices | Stereo |
+| Meta | Recommended | Recommended - all devices - Meta | 5:4 | 900*720 | 1200 | 1000 | 128 | all devices | Stereo |
+| Meta | Max GHG reduction | Max GHG reduction - all devices - Meta | 9:16 | 720*1280 | 1100 | 1000 | 128 | all devices | Stereo |
+| Meta | Recommended | Recommended - all devices - Meta | 9:16 | 720*1280 | 1400 | 1300 | 128 | all devices | Stereo |
+| Pinterest | Max GHG reduction | Max GHG reduction - all devices - Pinterest | 1:1 | 720*720 | 1100 | 1000 | 128 | all devices | Stereo |
+| Pinterest | Recommended | Recommended - all devices - Pinterest | 1:1 | 720*720 | 1400 | 1300 | 128 | all devices | Stereo |
+| Pinterest | Max GHG reduction | Max GHG reduction - all devices - Pinterest | 16:9 | 1280*720 | 1300 | 1300 | 128 | all devices | Stereo |
+| Pinterest | Recommended | Recommended - all devices - Pinterest | 16:9 | 1280*720 | 1690 | 1690 | 128 | all devices | Stereo |
+| Pinterest | Max GHG reduction | Max GHG reduction - all devices - Pinterest | 2:3 | 720x1080 | 1320 | 1100 | 128 | all devices | Stereo |
+| Pinterest | Recommended | Recommended - all devices - Pinterest | 2:3 | 720x1080 | 1716 | 1430 | 128 | all devices | Stereo |
+| Pinterest | Max GHG reduction | Max GHG reduction - all devices - Pinterest | 4:5 | 720*900 | 1100 | 1000 | 128 | all devices | Stereo |
+| Pinterest | Recommended | Recommended - all devices - Pinterest | 4:5 | 720*900 | 1400 | 1300 | 128 | all devices | Stereo |
+| Pinterest | Max GHG reduction | Max GHG reduction - all devices - Pinterest | 5:4 | 900*720 | 1100 | 1000 | 128 | all devices | Stereo |
+| Pinterest | Recommended | Recommended - all devices - Pinterest | 5:4 | 900*720 | 1400 | 1300 | 128 | all devices | Stereo |
+| Pinterest | Max GHG reduction | Max GHG reduction - all devices - Pinterest | 9:16 | 720*1280 | 1300 | 1300 | 128 | all devices | Stereo |
+| Pinterest | Recommended | Recommended - all devices - Pinterest | 9:16 | 720*1280 | 1690 | 1690 | 128 | all devices | Stereo |
+| Snapchat | Max GHG reduction | Max GHG reduction - all devices - Snapchat | 16:9 | 1280*720 | 1100 | 1000 | 128 | all devices | Stereo |
+| Snapchat | Recommended | Recommended - all devices - Snapchat | 16:9 | 1280*720 | 1400 | 1300 | 128 | all devices | Stereo |
+| Snapchat | Max GHG reduction | Max GHG reduction - all devices - Snapchat | 9:16 | 360*640 | 1100 | 715 | 128 | all devices | Stereo |
+| Snapchat | Recommended | Recommended - all devices - Snapchat | 9:16 | 720*1280 | 1400 | 1000 | 128 | all devices | Stereo |
+| The Trade Desk | CTV specific | CTV specific - CTV - The Trade Desk | 1:1 | 1080*1080 | 3315 | 3315 | 128 | CTV | Stereo |
+| The Trade Desk | Max GHG reduction | Max GHG reduction - all devices - The Trade Desk | 1:1 | 720*720 | 1300 | 1300 | 128 | all devices | Stereo |
+| The Trade Desk | Recommended | Recommended - all devices - The Trade Desk | 1:1 | 720*720 | 1690 | 1690 | 128 | all devices | Stereo |
+| The Trade Desk | Max GHG reduction | Max GHG reduction - all devices - The Trade Desk | 16:9 | 1280*720 | 1300 | 1300 | 128 | all devices | Stereo |
+| The Trade Desk | CTV specific | CTV specific - CTV - The Trade Desk | 16:9 | 1920*1080 | 3315 | 3315 | 128 | CTV | Stereo |
+| The Trade Desk | Recommended | Recommended - all devices - The Trade Desk | 16:9 | 1280*720 | 2000 | 2000 | 128 | all devices | Stereo |
+| The Trade Desk | CTV specific | CTV specific - CTV - The Trade Desk | 3:4 | 1080*1440 | 3315 | 3315 | 128 | CTV | Stereo |
+| The Trade Desk | Max GHG reduction | Max GHG reduction - all devices - The Trade Desk | 3:4 | 720*960 | 1300 | 1300 | 128 | all devices | Stereo |
+| The Trade Desk | Recommended | Recommended - all devices - The Trade Desk | 3:4 | 720*960 | 1690 | 1690 | 128 | all devices | Stereo |
+| The Trade Desk | Max GHG reduction | Max GHG reduction - all devices - The Trade Desk | 4:3 | 960*720 | 1300 | 1300 | 128 | all devices | Stereo |
+| The Trade Desk | CTV specific | CTV specific - CTV - The Trade Desk | 4:3 | 1440*1080 | 3315 | 3315 | 128 | CTV | Stereo |
+| The Trade Desk | Recommended | Recommended - all devices - The Trade Desk | 4:3 | 960*720 | 1690 | 1690 | 128 | all devices | Stereo |
+| The Trade Desk | Recommended | Recommended - all devices - The Trade Desk | 4:5 | 720*900 | 1690 | 1690 | 128 | all devices | Stereo |
+| The Trade Desk | CTV specific | CTV specific - CTV - The Trade Desk | 4:5 | 720*900 | 3315 | 3315 | 128 | CTV | Stereo |
+| The Trade Desk | Max GHG reduction | Max GHG reduction - all devices - The Trade Desk | 4:5 | 720*900 | 1300 | 1300 | 128 | all devices | Stereo |
+| The Trade Desk | Recommended | Recommended - all devices - The Trade Desk | 5:4 | 900*720 | 1690 | 1690 | 128 | all devices | Stereo |
+| The Trade Desk | CTV specific | CTV specific - CTV - The Trade Desk | 5:4 | 900*720 | 3315 | 3315 | 128 | CTV | Stereo |
+| The Trade Desk | Max GHG reduction | Max GHG reduction - all devices - The Trade Desk | 5:4 | 900*720 | 1300 | 1300 | 128 | all devices | Stereo |
+| The Trade Desk | Max GHG reduction | Max GHG reduction - all devices - The Trade Desk | 9:16 | 720*1280 | 1300 | 1300 | 128 | all devices | Stereo |
+| The Trade Desk | CTV specific | CTV specific - CTV - The Trade Desk | 9:16 | 1080*1920 | 3315 | 3315 | 128 | CTV | Stereo |
+| The Trade Desk | Recommended | Recommended - all devices - The Trade Desk | 9:16 | 720*1280 | 2000 | 2000 | 128 | all devices | Stereo |
+| Tiktok | Max GHG reduction | Max GHG reduction - all devices - Tiktok | 1:1 | 640*640 | 840 | 650 | 128 | all devices | Stereo |
+| Tiktok | Recommended | Recommended - all devices - Tiktok | 1:1 | 720*720 | 1000 | 900 | 128 | all devices | Stereo |
+| Tiktok | Min GHG reduction | Min GHG reduction | 1:1 | 720*720 | 1200 | 1170 | 128 | all devices | Stereo |
+| Tiktok | Max GHG reduction | Max GHG reduction - all devices - Tiktok | 16:9 | 960*540 | 840 | 650 | 128 | all devices | Stereo |
+| Tiktok | Recommended | Recommended - all devices - Tiktok | 16:9 | 1280*720 | 1300 | 1300 | 128 | all devices | Stereo |
+| Tiktok | Min GHG reduction | Min GHG reduction - all devices - Tiktok | 16:9 | 1280*720 | 1690 | 1690 | 128 | all devices | Stereo |
+| Tiktok | Max GHG reduction | Max GHG reduction - all devices - Tiktok | 9:16 | 540*960 | 840 | 650 | 128 | all devices | Stereo |
+| Tiktok | Recommended | Recommended - all devices - Tiktok | 9:16 | 720*1280 | 1300 | 1300 | 128 | all devices | Stereo |
+| Tiktok | Min GHG reduction | Min GHG reduction - all devices - Tiktok | 9:16 | 720*1280 | 1690 | 1690 | 128 | all devices | Stereo |
+| Xandr | CTV Roku ESPN Other | CTV Roku ESPN Other - CTV - Xandr | 1:1 | 1080*1080 | 3000 | 3000 | 128 | CTV | Stereo |
+| Xandr | Max GHG reduction | Max GHG reduction - all devices - Xandr | 1:1 | 720*720 | 1300 | 1300 | 128 | all devices | Stereo |
+| Xandr | Recommended | Recommended - all devices - Xandr | 1:1 | 720*720 | 1690 | 1690 | 128 | all devices | Stereo |
+| Xandr | Max GHG reduction | Max GHG reduction - all devices - Xandr | 16:9 | 1280*720 | 1300 | 1300 | 128 | all devices | Stereo |
+| Xandr | CTV Roku ESPN Other | CTV Roku ESPN Other - CTV - Xandr | 16:9 | 1920*1080 | 3000 | 3000 | 128 | CTV | Stereo |
+| Xandr | Recommended | Recommended - all devices - Xandr | 16:9 | 1280*720 | 2000 | 2000 | 128 | all devices | Stereo |
+| Xandr | CTV Roku ESPN Other | CTV Roku ESPN Other - CTV - Xandr | 3:4 | 1080*1440 | 3000 | 3000 | 128 | CTV | Stereo |
+| Xandr | Max GHG reduction | Max GHG reduction - all devices - Xandr | 3:4 | 720*960 | 1300 | 1300 | 128 | all devices | Stereo |
+| Xandr | Recommended | Recommended - all devices - Xandr | 3:4 | 720*960 | 1690 | 1690 | 128 | all devices | Stereo |
+| Xandr | Max GHG reduction | Max GHG reduction - all devices - Xandr | 4:3 | 960*720 | 1300 | 1300 | 128 | all devices | Stereo |
+| Xandr | CTV Roku ESPN Other | CTV Roku ESPN Other - CTV - Xandr | 4:3 | 1440*1080 | 3000 | 3000 | 128 | CTV | Stereo |
+| Xandr | Recommended | Recommended - all devices - Xandr | 4:3 | 960*720 | 1690 | 1690 | 128 | all devices | Stereo |
+| Xandr | Recommended | Recommended - all devices - Xandr | 4:5 | 720*900 | 1690 | 1690 | 128 | all devices | Stereo |
+| Xandr | CTV Roku ESPN Other | CTV Roku ESPN Other - CTV - Xandr | 4:5 | 720*900 | 3000 | 3000 | 128 | CTV | Stereo |
+| Xandr | Max GHG reduction | Max GHG reduction - all devices - Xandr | 4:5 | 720*900 | 1300 | 1300 | 128 | all devices | Stereo |
+| Xandr | Recommended | Recommended - all devices - Xandr | 5:4 | 900*720 | 1690 | 1690 | 128 | all devices | Stereo |
+| Xandr | CTV Roku ESPN Other | CTV Roku ESPN Other - CTV - Xandr | 5:4 | 900*720 | 3000 | 3000 | 128 | CTV | Stereo |
+| Xandr | Max GHG reduction | Max GHG reduction - all devices - Xandr | 5:4 | 900*720 | 1300 | 1300 | 128 | all devices | Stereo |
+| Xandr | Max GHG reduction | Max GHG reduction - all devices - Xandr | 9:16 | 720*1280 | 1300 | 1300 | 128 | all devices | Stereo |
+| Xandr | CTV Roku ESPN Other | CTV Roku ESPN Other - CTV - Xandr | 9:16 | 1080*1920 | 3000 | 3000 | 128 | CTV | Stereo |
+| Xandr | Recommended | Recommended - all devices - Xandr | 9:16 | 720*1280 | 2000 | 2000 | 128 | all devices | Stereo |
+| Xandr | CTV Netflix Hulu NBCU | CTV Netflix Hulu NBCU - CTV - Xandr | 9:16 | 1080*1920 | 17000 | 17000 | 192 | CTV | Stereo |
+| Xandr | CTV Netflix Hulu NBCU | CTV Netflix Hulu NBCU - CTV - Xandr | 16:9 | 1920*1080 | 17000 | 17000 | 192 | CTV | Stereo |
+| Youtube | CTV specific | CTV specific - CTV - Youtube | 1:1 | 1080*1080 | 17000 | 17000 | 192 | CTV | Stereo |
+| Youtube | Max GHG reduction | Max GHG reduction - all devices - Youtube | 1:1 | 720*720 | 1300 | 1300 | 128 | all devices | Stereo |
+| Youtube | Recommended | Recommended - all devices - Youtube | 1:1 | 720*720 | 1690 | 1690 | 128 | all devices | Stereo |
+| Youtube | Max GHG reduction | Max GHG reduction - all devices - Youtube | 16:9 | 1280*720 | 1300 | 1300 | 128 | all devices | Stereo |
+| Youtube | CTV specific | CTV specific - CTV - Youtube | 16:9 | 1920*1080 | 17000 | 17000 | 192 | CTV | Stereo |
+| Youtube | Recommended | Recommended - all devices - Youtube | 16:9 | 1280*720 | 2000 | 2000 | 128 | all devices | Stereo |
+| Youtube | CTV specific | CTV specific - CTV - Youtube | 3:4 | 1080*1440 | 17000 | 17000 | 192 | CTV | Stereo |
+| Youtube | Max GHG reduction | Max GHG reduction - all devices - Youtube | 3:4 | 720*960 | 1300 | 1300 | 128 | all devices | Stereo |
+| Youtube | Recommended | Recommended - all devices - Youtube | 3:4 | 720*960 | 1690 | 1690 | 128 | all devices | Stereo |
+| Youtube | Max GHG reduction | Max GHG reduction - all devices - Youtube | 4:3 | 960*720 | 1300 | 1300 | 128 | all devices | Stereo |
+| Youtube | CTV specific | CTV specific - CTV - Youtube | 4:3 | 1440*1080 | 17000 | 17000 | 192 | CTV | Stereo |
+| Youtube | Recommended | Recommended - all devices - Youtube | 4:3 | 960*720 | 1690 | 1690 | 128 | all devices | Stereo |
+| Youtube | Recommended | Recommended - all devices - Youtube | 4:5 | 720*900 | 1690 | 1690 | 128 | all devices | Stereo |
+| Youtube | CTV specific | CTV specific - CTV - Youtube | 4:5 | 720*900 | 17000 | 17000 | 192 | CTV | Stereo |
+| Youtube | Max GHG reduction | Max GHG reduction - all devices - Youtube | 4:5 | 720*900 | 1300 | 1300 | 128 | all devices | Stereo |
+| Youtube | Recommended | Recommended - all devices - Youtube | 5:4 | 900*720 | 1690 | 1690 | 128 | all devices | Stereo |
+| Youtube | CTV specific | CTV specific - CTV - Youtube | 5:4 | 900*720 | 17000 | 17000 | 192 | CTV | Stereo |
+| Youtube | Max GHG reduction | Max GHG reduction - all devices - Youtube | 5:4 | 900*720 | 1300 | 1300 | 128 | all devices | Stereo |
+| Youtube | Max GHG reduction | Max GHG reduction - all devices - Youtube | 9:16 | 720*1280 | 1300 | 1300 | 128 | all devices | Stereo |
+| Youtube | CTV specific | CTV specific - CTV - Youtube | 9:16 | 1080*1920 | 17000 | 17000 | 192 | CTV | Stereo |
+| Youtube | Recommended | Recommended - all devices - Youtube | 9:16 | 720*1280 | 2000 | 2000 | 128 | all devices | Stereo |
 
