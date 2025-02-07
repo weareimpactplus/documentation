@@ -12,17 +12,15 @@
   "isHidden": true
   },
   
-  "styling": {
   "fonts": {
     "body": {
       "family": "Arial"
-      }
+      },
     "heading": {
       "family": "Magnetik"
       "source": "/Magnetik-Regular.otf"
       }
-    }
-},
+    },
 
   "favicon": "/favicon_new.svg",
   
