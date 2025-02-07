@@ -10,6 +10,18 @@
 "modeToggle": {
   "default": "dark",
   "isHidden": true
+  },
+  
+  "styling": {
+  "fonts": {
+    "body": {
+      "family": "Arial"
+      },
+    "heading": {
+      "family": "Magnetik",
+      "source": "/Magnetik-Regular.otf", "Arial"
+      }
+    }
 },
 
   "favicon": "/favicon_new.svg",
