@@ -4,26 +4,21 @@
   "logo": {
     "dark": "/logo/ImpactPlus_Logo_White.svg",
     "light": "ImpactPlus_Logo_TintedBlack.svg"
-    
   },
-
-"modeToggle": {
-  "default": "light",
-  "isHidden": true
+  "modeToggle": {
+    "default": "light",
+    "isHidden": true
   },
-  
   "fonts": {
     "body": {
       "family": "Arial"
-      },
-    "heading": {
-      "family": "Magnetik"
-      "source": "/Magnetik-Regular.otf"
-      }
     },
-
+    "heading": {
+      "family": "Magnetik",
+      "source": "/Magnetik-Regular.otf"
+    }
+  },
   "favicon": "/favicon_new.svg",
-  
   "colors": {
     "primary": "#000000",
     "light": "#595861",
@@ -33,20 +28,26 @@
       "dark": "#033351"
     }
   },
-
-
   "navigation": [
     {
       "group": "IMPACT+ ESP Documentation",
-      "pages": ["documentation","report","visualise","reduce","campaignmanagement", "creativeoptimizer"]},
-     {"group": "Additional Resources",
       "pages": [
-      "glossary", "methodology", "releasenotes"]
+        "documentation",
+        "report",
+        "visualise",
+        "reduce",
+        "campaignmanagement",
+        "creativeoptimizer"
+      ]
+    },
+    {
+      "group": "Additional Resources",
+      "pages": [
+        "glossary",
+        "methodology",
+        "releasenotes"
+      ]
     }
-  ] 
-    
-  ,
-  "footerSocials": {
- 
-  }
+  ],
+  "footerSocials": {}
 }
