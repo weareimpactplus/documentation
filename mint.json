@@ -3,7 +3,9 @@
   "name": "Documentation",
   "logo": {
     "dark": "/logo/ImpactPlus_Logo_White.svg",
-    "light": "/logo/ImpactPlus_Logo_TintedBlack.svg"
+    "light": "/logo/ImpactPlus_Logo_TintedBlack.svg",
+       "image": "/footer-bg.png",
+    "width": "100%" 
   },
   "modeToggle": {
     "default": "light",
