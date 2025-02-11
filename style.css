@@ -1,0 +1,7 @@
+.content-body::before {
+  content: '';
+  display: block;
+  width: 100%;
+  background-image: url('/footer-bg.png');
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
