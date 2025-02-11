@@ -49,5 +49,9 @@
       ]
     }
   ],
-  "footerSocials": {}
+  "footerSocials": {},
+  "footer":{
+       "image": "/footer-bg.png",
+    "width": "100%" 
+  }
 }
